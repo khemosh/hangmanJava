@@ -17,7 +17,8 @@ public class Hangman {
 	public void playGame() {
 		Helper help = new Helper();
 		
-		String wordToGuess = "Game of Thrones";
+		// doesn't work with uppercase 
+		String wordToGuess = "game of thrones";
 		String[] word = help.stringToArray(wordToGuess);
 		Boolean correctGuess = false;
 		String[] array = help.blankArray(wordToGuess);
